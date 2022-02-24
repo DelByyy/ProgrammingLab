@@ -44,6 +44,7 @@ class CSVTimeSeriesFile(CSVFile):
     cur_date = ''
     prev_date = ''
 
+    
     for index in range(len(parsed_data)-1):
       parsed_date = parsed_data[index][0].split('-')
       if len(parsed_date) < 2:
